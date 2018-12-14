@@ -36,6 +36,6 @@ resource "aws_dynamodb_table" "hcvn-dynamodb-terraform-state-lock" {
   }
 
   tags {
-    Name = "DynamoDB Terraform State Lock Table"
+    Name = "DynamoDB Terraform State Lock Table for HCVN"
   }
 }
