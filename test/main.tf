@@ -16,4 +16,3 @@ data "aws_subnet" "example" {
 output "subnet_cidr_blocks" {
   value = ["${data.aws_subnet.example.*.cidr_block}"]
 }
-
