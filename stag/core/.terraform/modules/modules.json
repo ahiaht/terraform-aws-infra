@@ -1,0 +1,1 @@
+{"Modules":[{"Source":"git::http://gitlab-ce/tf-aws-mods/vpc.git?ref=v1.0","Key":"1.vpc;git::http://gitlab-ce/tf-aws-mods/vpc.git?ref=v1.0","Version":"","Dir":".terraform/modules/fa8768e00732169d3804f57b667e3ae7","Root":""}]}

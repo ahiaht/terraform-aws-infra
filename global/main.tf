@@ -1,6 +1,8 @@
 # example.tf
 
 provider "aws" {
+  profile = "itarchitect"
+  skip_credentials_validation = false
   region = "ap-southeast-1"
 }
 
@@ -32,7 +34,7 @@ resource "aws_dynamodb_table" "hcvn-dynamodb-terraform-state-lock" {
     name = "LockID"
     type = "S"
   }
- 
+
   tags {
     Name = "DynamoDB Terraform State Lock Table"
   }

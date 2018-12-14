@@ -1,10 +1,12 @@
 provider "aws" {
+  profile = "itarchitect"
+  skip_credentials_validation = false
   region = "ap-southeast-1"
 }
 
 terraform {
   backend "s3" {
-    bucket = "hcvn-tf-aws-state"
+    bucket = "hcvn-terraform-remote-state-storage-s3"
     key    = "stage/core/terraform.tfstate"
     region = "ap-southeast-1"
   }
