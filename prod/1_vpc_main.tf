@@ -1,17 +1,3 @@
-provider "aws" {
-  profile = "itarchitect"
-  skip_credentials_validation = false
-  region = "ap-southeast-1"
-}
-
-terraform {
-  backend "s3" {
-    bucket = "hcvn-terraform-remote-state-storage-s3"
-    key    = "stage/core/terraform.tfstate"
-    region = "ap-southeast-1"
-  }
-}
-
 module "vpc" {
   source = "git::http://gitlab-ce/tf-aws-mods/vpc.git?ref=v1.0"
 
